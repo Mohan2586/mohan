@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Library Management System</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+  <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+</head>
+<body>
+  <header>
+    <h1>🎓 CHENNAI UNIVERSITY</h1>
+    <p>Organize, Manage, and Access Your Library with QR Code Control</p>
+  </header>
+
+  <main>
+    <!-- Add Book Section -->
+    <section class="add-book">
+      <h2>Add New Book</h2>
+      <input type="text" id="bookID" placeholder="Book ID (e.g. B101)">
+      <input type="text" id="bookTitle" placeholder="Book Title">
+      <input type="text" id="bookAuthor" placeholder="Author">
+      <input type="text" id="bookDept" placeholder="Department (e.g. CSE)">
+      <button id="addBookBtn">Add Book</button>
+    </section>
+
+    <!-- Book List Section -->
+    <section class="book-list">
+      <h2>Available Books</h2>
+      <input type="text" id="searchBook" placeholder="Search by title or author...">
+      <ul id="bookContainer"></ul>
+    </section>
+
+    <!-- QR Code Section -->
+    <section class="qr-section">
+      <h2>QR Code Generator</h2>
+      <div id="qrcode"></div>
+      <button id="clearQR">Clear QR Code</button>
+    </section>
+
+    <!-- QR Scanner Section -->
+    <section class="scanner">
+      <h2>QR Code Scanner</h2>
+      <div id="reader" width="300"></div>
+      <p id="scanResult">Scan a QR code to view book details here.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Chennai University 2025 Library Management | Developed by college Management</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

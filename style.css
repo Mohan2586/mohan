@@ -1,0 +1,96 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f9ff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #003566;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header p {
+  margin-top: 5px;
+  color: #d1e9ff;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+section {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #003566;
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 90%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #003566;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00509e;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+li {
+  background-color: #e9f5ff;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.qr-section, .scanner {
+  text-align: center;
+}
+
+#qrcode {
+  margin: 15px auto;
+}
+
+#reader {
+  width: 250px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #003566;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
